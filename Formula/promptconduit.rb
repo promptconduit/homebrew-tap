@@ -5,21 +5,21 @@
 class Promptconduit < Formula
   desc "CLI for capturing events from AI coding assistants"
   homepage "https://promptconduit.dev"
-  version "0.13.0"
+  version "0.13.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/promptconduit/cli/releases/download/v0.13.0/promptconduit_0.13.0_darwin_amd64.tar.gz"
-      sha256 "a5e6f7d51752b7f09638c95427ea657ce49afa5f3b3b2c822cb1fafc043730c9"
+      url "https://github.com/promptconduit/cli/releases/download/v0.13.1/promptconduit_0.13.1_darwin_amd64.tar.gz"
+      sha256 "95ebe7dcae85789ae1283a5ee5f1531c83a4638674d1b5dd065aa4ca476f837f"
 
       define_method(:install) do
         bin.install "promptconduit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/promptconduit/cli/releases/download/v0.13.0/promptconduit_0.13.0_darwin_arm64.tar.gz"
-      sha256 "fe9d34a6167a4f8570a7a0a41155552cd515b846506ac58fe79d59182dfed7a2"
+      url "https://github.com/promptconduit/cli/releases/download/v0.13.1/promptconduit_0.13.1_darwin_arm64.tar.gz"
+      sha256 "f3a818a221eb36b2a14fb051b6f62c4bca2e4c3c051439bfba3c86e309801da5"
 
       define_method(:install) do
         bin.install "promptconduit"
@@ -29,15 +29,15 @@ class Promptconduit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/promptconduit/cli/releases/download/v0.13.0/promptconduit_0.13.0_linux_amd64.tar.gz"
-      sha256 "df22ad1aadb393dc84838458e9e96f9d6c6eff8fa3faadc07b120b2747e590d7"
+      url "https://github.com/promptconduit/cli/releases/download/v0.13.1/promptconduit_0.13.1_linux_amd64.tar.gz"
+      sha256 "8f10bc81a744b89001f15ba0f44e56be0e9defb7a6b50a5e7c1c0bd7b5f2c42b"
       define_method(:install) do
         bin.install "promptconduit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/promptconduit/cli/releases/download/v0.13.0/promptconduit_0.13.0_linux_arm64.tar.gz"
-      sha256 "354f04739062f3c4628c79f3f14dd1c6f2d172707f92336ebc62a8a396ecbbea"
+      url "https://github.com/promptconduit/cli/releases/download/v0.13.1/promptconduit_0.13.1_linux_arm64.tar.gz"
+      sha256 "b386d706f411bd9e7e52812fd6fd43c2d97f1610aedadb67befee138f3bf99de"
       define_method(:install) do
         bin.install "promptconduit"
       end
